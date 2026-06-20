@@ -1,0 +1,27 @@
+# ==============================================================
+# YTGrab Pro – Python Dependencies
+# ==============================================================
+# Install with: pip install -r requirements.txt
+#
+# Core framework
+fastapi==0.115.5          # High-performance async web framework
+uvicorn[standard]==0.32.1 # ASGI server for FastAPI (with WebSocket support)
+pydantic==2.10.3          # Data validation and settings management
+python-multipart==0.0.20  # File upload support for FastAPI
+
+# YouTube downloading
+yt-dlp>=2026.6.9          # YouTube/media downloader (keep current; YouTube changes often)
+
+# AI integration
+openai==1.57.2            # Official OpenAI Python client (GPT-4o)
+
+# HTTP client (for external requests)
+httpx==0.28.1             # Async HTTP client (used by FastAPI internally)
+aiofiles==24.1.0          # Async file I/O
+
+# Environment variables
+python-dotenv==1.0.1      # Load .env files for API keys and config
+
+# Optional: monitoring and logging
+# loguru==0.7.2           # Better logging (uncomment if desired)
+# prometheus-fastapi-instrumentator==7.0.0  # Metrics endpoint

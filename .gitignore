@@ -1,0 +1,10 @@
+node_modules/
+dist/
+
+backend/.venv/
+backend/downloads/
+backend/*.log
+backend/.env
+
+.env
+.env.local

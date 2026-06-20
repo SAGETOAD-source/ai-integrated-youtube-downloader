@@ -1,0 +1,6 @@
+.venv/
+downloads/
+*.log
+.env
+__pycache__/
+*.pyc

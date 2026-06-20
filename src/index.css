@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* ============================================================
+   YTGrab Pro – Global Styles
+   ============================================================ */
+
+/* Custom scrollbar for the dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(239, 68, 68, 0.5);
+}
+
+/* Smooth scrolling site-wide */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default focus outline and use custom */
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(239, 68, 68, 0.6);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Global text selection color */
+::selection {
+  background: rgba(239, 68, 68, 0.3);
+  color: white;
+}
+
+/* Prevent layout shift from scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Glassmorphism utility classes */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #ef4444, #ec4899, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated gradient border */
+@keyframes border-rotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Remove input autofill background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Line clamp utilities */
+.line-clamp-1 { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
